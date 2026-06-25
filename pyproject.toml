@@ -1,7 +1,30 @@
 [project]
-name = "nanotrack"
+name = "ntrk"
 version = "0.1.0"
-description = "Add your description here"
+description = "Wrap a command; later, ask how any file was made. A minimal experiment & lineage tracker."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "tim-hudelmaier" }]
+keywords = ["lineage", "provenance", "experiment", "reproducibility", "cli"]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tim-hudelmaier/ntrk"
+Repository = "https://github.com/tim-hudelmaier/ntrk"
+
+[project.scripts]
+nt = "ntrk.cli:main"
+ntrk = "ntrk.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.3,<0.12"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

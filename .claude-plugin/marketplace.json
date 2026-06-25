@@ -1,0 +1,14 @@
+{
+  "name": "ntrk",
+  "owner": { "name": "tim-hudelmaier" },
+  "description": "Experiment and lineage tracking tools for coding agents.",
+  "plugins": [
+    {
+      "name": "ntrk",
+      "source": "./",
+      "description": "Record and trace experiment lineage with the nt CLI.",
+      "homepage": "https://github.com/tim-hudelmaier/ntrk",
+      "license": "MIT"
+    }
+  ]
+}

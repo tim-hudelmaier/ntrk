@@ -1,0 +1,9 @@
+{
+  "name": "ntrk",
+  "description": "Record and trace experiment lineage with the nt CLI: wrap commands to capture how outputs were produced, and trace any file back to its inputs.",
+  "version": "0.1.0",
+  "author": { "name": "tim-hudelmaier" },
+  "homepage": "https://github.com/tim-hudelmaier/ntrk",
+  "repository": "https://github.com/tim-hudelmaier/ntrk",
+  "license": "MIT"
+}
